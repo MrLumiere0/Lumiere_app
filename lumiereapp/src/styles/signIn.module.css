@@ -1,0 +1,234 @@
+.SignOn{
+    width: 100vw;
+    height: 100vh;
+     margin: 0;
+     display: flex;
+     flex-direction: column;
+     overflow: hidden;
+     position: fixed;
+     background-color: black;
+     display: flex;
+     flex-wrap: nowrap;
+     align-items: center;
+}
+
+.main{
+    /* background-color: rgba(22,21,26,255); */
+    background-color: white;
+    height: 100%;
+    width: inherit;    
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    color: white;
+    background-color: black;
+    padding:1rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+
+}
+
+
+#logo{
+    display: flex;
+    font-size: 1rem;
+}
+
+#logoP1{
+    color: white;
+}
+
+#logoP2{
+    color: grey;
+    margin-left: .5rem;
+}
+
+.navItemList{
+    display: flex;
+    flex-wrap: nowrap;
+    }
+    
+    .nav_Item{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    border-right: 1px solid white;
+    padding-right: 1.5rem;
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    
+    }
+    .nav_Item_last{
+        text-decoration: none;
+        color: white;
+        font-size: 1.2rem;
+        margin-left: 1rem;
+        display: flex;
+        align-items: center;
+        font-weight: 600;
+    }
+
+    .content {
+        height: inherit !important;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        position: relative;
+        
+    }
+    .Left{
+        width: 50%;
+        color:white;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Left h3{
+        color: white;
+        margin-top: -15rem;
+        font-size: 3rem;
+        font-weight: 100;
+            }
+
+
+.Right{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+
+}
+.Form {
+    padding: 1rem;
+    padding-top: 0;
+    box-sizing: border-box;
+    height: 40rem;
+    width: 80%;
+
+    background-color: white;
+    border-radius: 5px;
+    max-width: 900px;
+    min-width: 500px;
+
+    
+
+    
+}
+.FormInputs{
+    height: 50%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 10px;
+    background-color: black;
+    /* -webkit-box-shadow: 0px 0px 17px 1px rgba(255,255,255,1);
+    -moz-box-shadow: 0px 0px 17px 1px rgba(255,255,255,1);
+    box-shadow: 0px 0px 17px 1px rgba(255,255,255,1); */
+
+}
+.FormInputs div {
+    width: inherit;
+    height: 100;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+
+}
+.FormInputs input{
+    width: 15rem;
+    height: 3rem;
+    border-radius: 5px;
+    border: 1px solid rgb(177, 170, 170);
+    }
+    
+    .FormInputs input::placeholder{
+        font-size: 1.15rem;
+        font-weight: 100;
+    }
+
+#FormUser{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: black;
+    box-sizing: border-box;
+}
+
+#FormUser h3{
+font-size: 2rem;
+font-weight: 200;
+color: rgb;
+
+}
+
+
+
+Input{
+    margin-bottom: 2rem;
+}
+    
+
+.Left{
+    color: black;
+}
+.bttnSignIn{
+    height: 4rem;
+    border:none;
+    border-radius: 15px;
+    background-color: grey;
+    color: white;
+    margin-top: 1rem;
+    font-size: 1.25rem;
+    width: 15rem;
+}
+
+.bttnSignIn:hover{
+    height: 4rem;
+    border:none;
+    border-radius: 15px;
+    background-color: grey;
+    color: white;
+    margin-top: 1rem;
+    font-size: 1.25rem;
+    width: 15rem;
+    cursor: pointer;
+}
+
+.FormInputs .bttnSignIn:hover{
+    height: 4rem;
+    border:none;
+    border-radius: 15px;
+    background-color: grey;
+    color: white;
+    margin-top: 1rem;
+    font-size: 1.25rem;
+    width: 15rem;
+    cursor: pointer;
+    background-color: black;
+    -webkit-box-shadow: 0px 0px 10px 1px rgba(255,255,255,1);
+    -moz-box-shadow: 0px 0px 10px 1px rgba(255,255,255,1);
+    box-shadow: 0px 0px 10px 1px rgba(255,255,255,1);
+
+}
+
+

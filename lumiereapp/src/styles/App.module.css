@@ -1,0 +1,412 @@
+.App {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 1rem;
+  position: absolute;
+  min-width: 1780px;
+  overflow:hidden;
+}
+
+.account{
+  border-radius: 10px;
+  width: 15%;
+  /* background-color: #222224; */
+  box-sizing: border-box;
+  padding: .5rem;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+
+.mainContent{
+  width: 55%;
+  overflow:scroll;
+
+}
+
+
+#logo{
+  display: flex;
+  font-size: .75rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+#logoP1{
+  color: white;
+}
+
+#logoP2{
+  color: #919196;
+  margin-left: .5rem;
+}
+
+.accountNav{
+  width: 90%;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  padding-left: .5rem;
+  padding-left: .5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  box-sizing: border-box;
+  background-color: #16151a;
+  color: whitesmoke;
+align-self: center;
+border-radius: 15px;
+font-size: 1rem;
+font-weight: 100;
+}
+
+.accountNav button{
+  /* margin-left: 9rem; */
+  height: 4rem;
+  width: 10rem;
+  border: none;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.accountNav button:hover{
+  /* margin-left: 9rem; */
+  height: 4rem;
+  width: 10rem;
+  border: none;
+  border-radius: 15px;
+}
+
+.accountNav h3{
+  color: rgba(7, 129, 254);
+  font-size: 1rem;
+}
+
+#signIn{
+  margin-bottom: 2rem;
+  background-color: grey;
+  color: white;
+  font-size: 1.25rem;
+  margin-top: 2rem;
+
+}
+
+#signIn:hover{
+  background-color: white;
+  color: grey;
+  cursor: pointer;
+  font-size: 1.25rem;
+}
+
+
+#copy_Req_button {
+  background-color: rgba(7, 129, 254);
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+#copy_Req_button:hover{
+  background-color:white;
+  color:  rgba(7, 129, 254);
+  font-size: 1.1rem;
+  font-weight: 400;
+  cursor: pointer;
+
+}
+
+
+.navItemListNews{
+  align-self: center;
+  justify-self: flex-end;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin-top: 2rem;
+  /* border-bottom: 1px solid grey; */
+  }
+
+  .navItemListNews 
+  
+  .nav_Item{
+    width: 100%;
+    height:5rem;
+  text-decoration: none;
+  color: #919196;
+  font-size: 1.5rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+
+  }
+  .nav_Item:hover{
+    width: 100%;
+    height:5rem;
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  display: flex;
+  flex-wrap: no;
+  align-items: center;
+  /* transform:translateY(-25px) ; */
+
+
+  }
+ .nav_Item_span{
+  margin-left: 2rem;
+  font-size: 1.5rem;
+  color: #919196;
+  font-weight: 100;
+ }
+
+ .nav_Item_span_News{
+  color:white;
+  font-size: 1.5rem;
+  margin-left: 2rem;
+  font-weight: 100;
+ }
+
+  #News {
+      color: white;
+  }
+
+
+
+  
+  .mainContent{
+    padding: 1rem
+  }
+  .mainContent input {
+    height: 1.5rem;
+    color:white
+  }
+
+  .searchBar{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    box-sizing: border-box;
+    
+  }
+
+  .searchBar input {
+    border: none;
+    height: 3rem;
+    border-radius: 10px;
+    background-color: #16151a;
+
+  }
+
+  .searchBar select {
+    border: none;
+    height: 3rem;
+    border-radius: 10px;
+    background-color: #16151a;
+
+  }
+
+
+  .searchBar select::placeholder {
+    border: none;
+    height: 3rem;
+    border-radius: 10px;
+    background-color: #16151a;
+    color: white;
+  }
+
+  .searchBar input::placeholder{
+    border: none;
+    height: 3rem;
+    border-radius: 10px;
+    color: grey;
+    padding-left: 2rem;
+
+  }
+
+    select{
+      color: grey;
+      padding-left: 1rem ;
+    }
+
+  #keyword{
+    width: 50%;
+  }
+
+  #category{
+    width: 20%;
+  }
+
+  #sortBy{
+    width: 20%;
+  }
+
+  #sortBy select {
+    color: grey;
+
+  }
+
+  .banner{
+    background-image: url('../assets/banner.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 2rem;
+    margin-top: none;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    
+  }
+  
+  .bannerHeading {
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    font-weight: 550;
+    color: white;
+  }
+
+  .banner_nav_Item{
+    width: 13rem;
+
+  }
+  .ReqDemo{
+    border: none;
+    width: 9rem;
+    height: 3rem;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(38, 38, 223);
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.ReqDemo:hover{
+    cursor: pointer;
+}
+
+
+.listView{
+  color: white;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  border-radius: 10px;
+  box-sizing: border-box;
+
+  
+
+}
+#view{
+  background-color: black;
+
+}
+#views h3{
+font-size: 1.5em;
+font-weight: 200;
+
+}
+
+
+
+.listView ul{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 1rem;
+  background-color: black;
+
+  
+
+}
+
+.listView h3{
+  height: 2rem;
+  margin-left: 1rem;
+  align-self: flex-start;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.dynamicView{
+width: 100%;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(3, 1fr);
+grid-column-gap: 20px;
+grid-row-gap: 20px;
+height: 50rem;
+justify-content: center;
+}
+
+.resultsView{
+  width: 100%;
+  grid-row-gap: 20px;
+  height: 50rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.return{
+  font-size: 2rem;
+}
+
+.returnBttn{
+  width:7rem;
+  height: 3rem;
+  border-radius: 5px;
+  background-color: grey;
+  color: white;
+  border: none;
+}
+.returnBttn:hover{
+  width:7rem;
+  height: 3rem;
+  border-radius: 5px;
+  background-color: grey;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.priceAction{
+  width: 20%;
+  border-radius: 5px;
+  background-color:#16151a;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  color: white;
+
+
+}
+
+#priceActionHeader{
+  background-color: black ;
+  height: 6.5rem;
+  width: 100%;
+
+}
+
+.priceAction_View{
+  border-radius: 5px;
+}
