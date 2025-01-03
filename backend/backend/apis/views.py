@@ -1,15 +1,13 @@
+from rest_framework.decorators import api_view
 from rest_framework.response import Response
+from rest_framework import status
 from django.http import JsonResponse
 
 import requests
-from rest_framework.decorators import api_view
-from rest_framework import status
 from ..models import Users
 from ..models import DemoContactList
 from .serializers import UserSerializer
 from .serializers import DemoListSerializer
-from newsapi import NewsApiClient
-import certifi 
 
 
  
@@ -20,8 +18,9 @@ def getData(request):
 
 @api_view(["GET"])
 def getDemoList(request):
-      data = DemoContactList.objects.all()
-      return JsonResponse({"List:", dict(data)}, safe=False) 
+      contacts = DemoContactList.objects.all()
+      serializedData = DemoListSerializer(contacts, many=True).data
+      return Response(serializedData) 
 
 
 @api_view(["POST"])
@@ -29,7 +28,10 @@ def newRegister (request):
             serializer = DemoListSerializer(data = request.data)
             if serializer.is_valid():
                 serializer.save()
+
                 return Response(serializer.data, status=status.HTTP_201_CREATED)
+            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
 
 @api_view(["GET"])
 def getNews(request):

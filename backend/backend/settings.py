@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-rq)$ia&6f-vy$9o8_3xm(##f#g@w+6yaogvbkp%x@@3p$7(z*y
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*", "http://127.0.0.1", "localhost"]
 
 
 # Application definition
@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'sslserver',
     "lumiereapp",
     "backend",
     'rest_framework',
@@ -54,16 +55,14 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     # 'corsheaders.middleware.CorsMiddleware',
-    'django.middleware.common.CommonMiddleware',
-    
 
-    
 ]
 
-
 CORS_ALLOWED_ORIGINS = [
+  
     "http://localhost:8000",  # Replace with your allowed origins
     "http://127.0.0.1:8000",
+
 ]
 
 CORS_TRUSTED_ORIGINS = [
@@ -71,7 +70,6 @@ CORS_TRUSTED_ORIGINS = [
     "http://127.0.0.1:8000",
     "http://localhost:3000/",
 ]
-
 
 ROOT_URLCONF = 'backend.urls'
 

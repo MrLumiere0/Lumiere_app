@@ -7,8 +7,7 @@ class Users(models.Model):
     # first = models.CharField(max_length=30, default="")
     # last = models.CharField(max_length=30)
     # phone = models.IntegerField()
-    def name_of_User(self):
-        return
+ 
     def __str__(self):
         return self.username
 

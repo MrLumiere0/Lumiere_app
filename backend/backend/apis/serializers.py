@@ -6,9 +6,9 @@ from ..models import DemoContactList
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = Users
-        fields = ("username", 'password')
+        fields = "__all__"
 
 class DemoListSerializer(serializers.ModelSerializer):
     class Meta:
         model = DemoContactList
-        fields =["id","username", "role", "first_Name", "last_Name", "phone"]
+        fields =  "__all__"
