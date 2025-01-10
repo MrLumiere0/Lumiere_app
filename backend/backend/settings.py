@@ -39,37 +39,37 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'sslserver',
-    "lumiereapp",
+    "lumiere",
     "backend",
     'rest_framework',
-    'corsheaders',
 
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    # 'django.middleware.csrf.CsrfViewMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    # 'corsheaders.middleware.CorsMiddleware',
 
 ]
 
 CORS_ALLOWED_ORIGINS = [
-  
-    "http://localhost:8000",  # Replace with your allowed origins
+    "http://localhost:3000",
+    "http://localhost:8000",  
     "http://127.0.0.1:8000",
-
 ]
 
 CORS_TRUSTED_ORIGINS = [
-    "http://localhost:8000",  # Replace with your allowed origins
+     "http://localhost:3000",
+    "http://localhost:8000", 
     "http://127.0.0.1:8000",
-    "http://localhost:3000/",
 ]
+
+CORS_ALLOWED_CREDENTIALS = True
 
 ROOT_URLCONF = 'backend.urls'
 
@@ -77,7 +77,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            os.path.join(BASE_DIR, "lumiereapp/build")
+            os.path.join(BASE_DIR, "lumiere/build")
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -124,6 +124,7 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
+
 # Internationalization
 # https://docs.djangoproject.com/en/5.1/topics/i18n/
 
@@ -147,7 +148,7 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "lumiereapp/build/static")
+    os.path.join(BASE_DIR, "lumiere/build/static")
 ]
 
 
@@ -159,3 +160,19 @@ SECURE_HSTS_PRELOAD = True
 SESSION_COOKIE_SECURE = False
 CSRF_COOKIE_SECURE = False
 SECURE_SSL_REDIRECT = False
+
+REST_FRAMEWORK = {
+    'DEFAULT_RENDERER_CLASSES': [
+        'rest_framework.renderers.JSONRenderer',
+    ],
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        # 'rest_framework.authentication.SessionAuthentication',
+        'backend.apis.auth.CookiesJWTAuthenication',
+
+    ],
+
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAuthenticated',
+    ]
+
+}
