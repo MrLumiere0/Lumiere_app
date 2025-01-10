@@ -70,6 +70,7 @@ export function Demo () {
      if (Object.keys(errs).length === 0){
         // console.log("No keys")   
         try {
+            setValidForm(false)
             const response = await fetch("/getNews", {
                 method: "POST",
                 headers: {
