@@ -1,0 +1,43 @@
+
+
+  
+    #charts {
+        height: 100%;
+    }
+
+    #Main{
+        height: 100%;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        justify-content: space-between;
+    }
+
+    #mainContent{
+        height: 100%;
+        overflow:scroll;
+        background-color: white;
+        border-radius: 15px;
+    }
+
+    .viewChanger{
+        width: 100%;
+        text-align: center;
+}
+
+#viewsSwitch{
+    border:white 1px solid;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    height: 1.5rem;
+}
+
+    .banner{
+        padding-left: 1rem;
+        /* background-color: black; */
+    }
+    .bannerHeading{
+
+    }

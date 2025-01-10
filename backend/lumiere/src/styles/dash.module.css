@@ -1,0 +1,364 @@
+.Dash {
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-color: black;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 1rem;
+  }
+
+  .account{
+    width: 25%;
+    box-sizing: border-box;
+    padding: .5rem;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    height: 100%;
+    position: relative;   
+    justify-content: space-between; 
+  }
+
+  .accountContainer{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    height: fit-content;
+    position: relative;
+}
+
+.LogoLink{
+    text-decoration: none;
+    display: flex;
+    flex-wrap: nowrap;
+  
+  }
+  #logo{
+    display: flex;
+    font-size: .75rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+    max-width: 100%;
+    font-size: .75rem;
+  
+  }
+  
+  #logoP1{
+    color: white;
+  }
+  
+  #logoP2{
+    color: #919196;
+    margin-left: .5rem;
+  }
+  
+  .accountNav{
+    width: 90%;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    padding-top: 1.5rem;
+    padding-bottom: .5rem;
+    box-sizing: border-box;
+    background-color: white;
+    color: black;
+  align-self: center;
+  border-radius: 15px;
+  font-size: 1rem;
+  font-weight: 100;
+  text-align: center;
+  margin-bottom: 3rem;
+  -webkit-box-shadow: 0px 0px 13px 1px rgba(255,255,255,1);
+  -moz-box-shadow: 0px 0px 13px 1px rgba(255,255,255,1);
+  box-shadow: 0px 0px 13px 1px rgba(255,255,255,1);
+  }
+
+  .accountView  h3{
+    font-size: 2rem;
+    font-weight: 700;
+
+  }
+
+  .accountView  h5{
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  
+  .accountNav button{
+    /* margin-left: 9rem; */
+    height: 4rem;
+    width: 10rem;
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+    
+   
+  }
+  
+  .accountNav button:hover{
+    /* margin-left: 9rem; */
+    height: 4rem;
+    width: 10rem;
+    border: none;
+    border-radius: 15px;
+  }
+  
+  .accountNav h3{
+    color: black;
+    font-size: 1rem;
+  }
+  
+  #signIn{
+    margin-bottom: 2rem;
+    background-color: grey;
+    color: white;
+    font-size: 1.25rem;
+    margin-top: 2rem;
+    width: 90%;
+  
+  }
+  
+  #signIn:hover{
+    background-color: white;
+    color: grey;
+    cursor: pointer;
+    font-size: 1.25rem;
+    width: 90%;
+  
+  }
+
+  .profilePic{
+    width: 70%;
+    align-self: center;
+    border-radius: 100px;
+    border: 3px solid rgba(7, 129, 254);
+  }
+
+  .accountNav h3{
+    margin-bottom: -1rem;
+  }
+
+  .Main{
+  width: 80%;
+  min-width: 600px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  padding: 1rem;
+  padding-top: .5rem;
+  }
+
+  .navItemListNews{
+    align-self: center;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    /* border-bottom: 1px solid grey; */
+    }
+  
+    
+    .nav_Item{
+      width: 100%;
+      height:5rem;
+    text-decoration: none;
+    color: #919196;;
+    font-size: 1.5rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    display: flex;
+    flex-wrap: nowrap;
+  
+    }
+    /* .nav_Item:hover{
+      width: 100%;
+      height:5rem;
+    text-decoration: none;
+    color: #919196;
+    font-size: 1.5rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;  
+  
+    } */
+   .nav_Item_span{
+    margin-left: 2rem;
+    font-size: 1.5rem;
+    color: #919196;;
+    font-weight: 100;
+   }
+ 
+   .dashHeader{
+    font-size: 3rem;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+
+   }
+
+   .userView{
+    width: 100%;
+    margin-top: 0;
+   }
+
+   #ArticleHEader {
+    font-weight: 200;
+    font-size: 3rem;
+   }
+
+   .userView h4{
+    font-size: 3rem;
+   }
+
+   .searchBar{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    box-sizing: border-box;
+    
+  }
+
+  .searchBar input {
+    border: none;
+    height: 3rem;
+    border-radius: 10px;
+    background-color: #16151a;
+
+  }
+
+  #keyword{
+    width: 80%;
+    color: white;
+    padding-left: 2rem;
+  }
+
+
+  #searchBttn{
+    height: 3rem;
+    width: 15%;
+    min-width: 3rem;
+    border: none;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-size: .9rem;
+    /* -webkit-box-shadow: 0px 0px 10px 1px rgba(255,255,255,1);
+    -moz-box-shadow: 0px 0px 10px 1px rgba(255,255,255,1);
+    box-shadow: 0px 0px 10px 1px rgba(255,255,255,1); */
+
+  }
+
+  #searchBttn:hover{
+    cursor: pointer;
+    height: 3rem;
+    width: 15%;
+    border: none;
+  }
+
+  .listView{
+    color: white;
+    margin: 0;
+    padding: 1rem;
+    background-color: black;
+    border-radius: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+  
+    
+  
+  }
+  #views{
+    background-color: black;
+    height: 45rem;
+  
+  }
+  
+  
+  #views ul{
+    background-color: white;
+    overflow: scroll;
+    color: white;
+
+  }
+  
+  
+  .listView ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: white;
+    color: white;
+    padding: 0; 
+  
+  }
+
+
+.dynamicView{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  height: 50rem;
+  justify-content: center;
+  overflow:scroll;
+  }
+
+.logoutBttn{
+  width: 60%;
+  padding: 1rem;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+
+}
+.logout{
+
+    height: 3rem;
+    width: 80%;
+    min-width: 3rem;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    color: red;
+    font-size: .9rem;
+}
+
+.logout:hover{
+
+  height: 3rem;
+  width: 80%;
+  min-width: 3rem;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  color: red;
+  font-size: .9rem;
+  cursor: pointer;
+}
+
